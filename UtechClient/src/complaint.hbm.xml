@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "client.StudentComplaint" table = "studentcomplaint">
+   
+      <id name = "ComplaintID" type = "int" column = "COMPLAINT_ID"/>
+      <property name = "StudentID" type = "int" column = "STUD_ID"/>
+      <property name = "RepID" column = "REP_ID" type = "int"/>
+      <property name = "typeOfIssue" column = "TYPE_OF_ISSUE" type = "string"/>
+      <property name = "detailsOfIssue" column = "DETAILS_OF_ISSUE" type = "string"/>
+      <property name = "service" column = "SERVICE_TYPE" type = "string"/>
+      <property name = "response" column = "RESPONSE" type = "string"/>
+      
+   </class>
+</hibernate-mapping>
